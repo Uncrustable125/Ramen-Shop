@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Ramen
+[System.Serializable]
+public class Ramen : MonoBehaviour
 {
     //preference variables
     [Range(0f, 10f)] public float rich; //rich or light
@@ -11,8 +11,8 @@ public class Ramen
     [Range(0f, 10f)] public float meaty;
     [Range(0f, 10f)] public float fishy;
     [Range(0f, 10f)] public float umami;
-    [Range(0f, 10f)] public float sweet;
-    [Range(0f, 10f)] public float sour;
+ //   [Range(0f, 10f)] public float sweet;
+ //   [Range(0f, 10f)] public float sour;
     [Range(0f, 10f)] public float size;
 
     //Will add value to ramen score
@@ -28,15 +28,16 @@ public class Ramen
  // [Range(0f, 10f)] public float Popularity;
 
     public string bowlName; // Optional: give each ramen a name
-    public List<Ingredient> Ingredients { get; private set; }
+    public List<IngredientData> Ingredients = new List<IngredientData>();
 
-    public Ramen(string name)
+    public void InitializeRamen(string name, List<IngredientData> ingredients)
     {
         bowlName = name;
-        Ingredients = new List<Ingredient>();
+        Ingredients = ingredients;
+        RamenProfile();
     }
 
-    public void AddIngredient(Ingredient ingredient)
+    public void AddIngredient(IngredientData ingredient)
     {
         Ingredients.Add(ingredient);
     }
@@ -44,19 +45,18 @@ public class Ramen
     {
         for (int i = 0; i < Ingredients.Count; i++)
         {
-            this.rich = Mathf.Min(this.rich + Ingredients[i].rich  / 2, 10f);
-            this.spicy = Mathf.Min(this.spicy + Ingredients[i].spicy / 2, 10f);
-            this.meaty = Mathf.Min(this.meaty + Ingredients[i].meaty / 2, 10f);
-            this.fishy = Mathf.Min(this.fishy + Ingredients[i].fishy / 2, 10f);
-            this.umami = Mathf.Min(this.umami + Ingredients[i].umami / 2, 10f);
-            this.sweet = Mathf.Min(this.sweet + Ingredients[i].sweet / 2, 10f);
-            this.sour = Mathf.Min(this.sour + Ingredients[i].sour / 2, 10f); 
-            this.size = Mathf.Min(this.size + Ingredients[i].size / 2, 10f);
-
-            this.presentation = Mathf.Min(this.presentation + Ingredients[i].presentation, 4f);
-            this.aroma = Mathf.Min(this.aroma + Ingredients[i].aroma, 4f);
-            this.quality = Mathf.Min(this.quality + Ingredients[i].quality, 4f);
-            this.timeToCook = this.timeToCook + Ingredients[i].timeToCook;
+            this.rich = Mathf.Min(this.rich + Ingredients[i].Rich, 10f);
+            this.spicy = Mathf.Min(this.spicy + Ingredients[i].Spicy, 10f);
+            this.meaty = Mathf.Min(this.meaty + Ingredients[i].Meaty, 10f);
+            this.fishy = Mathf.Min(this.fishy + Ingredients[i].Fishy, 10f);
+            this.umami = Mathf.Min(this.umami + Ingredients[i].Umami, 10f);
+         //   this.sweet = Mathf.Min(this.sweet + Ingredients[i].sweet, 10f);
+         //   this.sour = Mathf.Min(this.sour + Ingredients[i].sour, 10f); 
+            this.size = Mathf.Min(this.size + Ingredients[i].Size, 10f);
+            this.presentation = Mathf.Min(this.presentation + Ingredients[i].Presentation, 5f);
+            this.aroma = Mathf.Min(this.aroma + Ingredients[i].Aroma, 5f);
+            this.quality = Mathf.Min(this.quality + Ingredients[i].Quality, 5f);
+            //this.timeToCook = this.timeToCook + Ingredients[i].timeToCook;
 
         }
         //this.bowlName = name;

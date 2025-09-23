@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ffdd8c924b8014fbcb1d0ce32d179a, type: 3}
+  m_Name: Standard
+  m_EditorClassIdentifier: Assembly-CSharp::PersonData
+  richPreference: 1.78
+  spicyPreference: 0
+  meatyPreference: 1.31
+  fishyPreference: 0.59
+  umamiPreference: 0.44
+  hunger: 1.11
+  sourPreference: 0
+  sweetPreference: 0
+  likes: []
+  loves: []
+  dislikes: []
+  possibleSprites: []

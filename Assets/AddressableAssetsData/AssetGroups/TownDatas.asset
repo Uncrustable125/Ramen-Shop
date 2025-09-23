@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: TownDatas
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: TownDatas
+  m_GUID: af92bab44a0d7b24e960043ae3816dd5
+  m_SerializeEntries:
+  - m_GUID: b0c88cdad5d05b044977bc09ceb66f1a
+    m_Address: Assets/Resources_moved/Towns/Tokyo.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TownDatas
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5d520ad0efe42c54e84bbf60aa2cf0f9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 24b1c475f45f5c542acbb597b800c9e7, type: 2}
+    - {fileID: 11400000, guid: 79578dbe9d36044449f0cd4fbb7ffcb7, type: 2}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ce6839e2fcd36409ee82ecf84750bd, type: 3}
+  m_Name: Tokyo
+  m_EditorClassIdentifier: Assembly-CSharp::TownData
+  townName: 0
+  locals:
+  - {fileID: 11400000, guid: ca84a315e026df24d8878d6a7c77dc4f, type: 2}
+  - {fileID: 11400000, guid: 9e9237e89ee8f9d45b34e5b881b2461d, type: 2}
+  - {fileID: 11400000, guid: 9e9237e89ee8f9d45b34e5b881b2461d, type: 2}
+  - {fileID: 11400000, guid: 9e9237e89ee8f9d45b34e5b881b2461d, type: 2}
+  - {fileID: 11400000, guid: ca84a315e026df24d8878d6a7c77dc4f, type: 2}
+  - {fileID: 11400000, guid: ca84a315e026df24d8878d6a7c77dc4f, type: 2}
+  - {fileID: 11400000, guid: ca84a315e026df24d8878d6a7c77dc4f, type: 2}
+  - {fileID: 11400000, guid: 9e9237e89ee8f9d45b34e5b881b2461d, type: 2}
+  - {fileID: 11400000, guid: 9e9237e89ee8f9d45b34e5b881b2461d, type: 2}
+  - {fileID: 11400000, guid: ca84a315e026df24d8878d6a7c77dc4f, type: 2}
+  - {fileID: 11400000, guid: 9e9237e89ee8f9d45b34e5b881b2461d, type: 2}
+  - {fileID: 11400000, guid: 9e9237e89ee8f9d45b34e5b881b2461d, type: 2}
+  - {fileID: 11400000, guid: ca84a315e026df24d8878d6a7c77dc4f, type: 2}
+  specialPersons:
+  - {fileID: 11400000, guid: 463540f35b19db14389b685a1c85fb4b, type: 2}
+  specialPersonShowRate:
+  - 1
+  tourists:
+  - {fileID: 11400000, guid: ff7c113bf201c5b43a5f6e5f74785003, type: 2}
+  addedDifficulty: 0

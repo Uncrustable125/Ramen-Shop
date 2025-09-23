@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49adb48913549a64083704237227006a, type: 3}
+  m_Name: Tare
+  m_EditorClassIdentifier: Assembly-CSharp::Ingredient
+  ingredientName: 
+  rich: 0
+  spicy: 2.19
+  meaty: 0
+  fishy: 1.73
+  umami: 0
+  size: 1.37
+  presentation: 0
+  quality: 0
+  aroma: 0
+  broth: 0
+  tare: 1
+  noodles: 0
+  protein: 0
+  aromaticOil: 0
+  topping: 0
+  egg: 0
+  gluten: 0
+  dairy: 0
+  nut: 0
+  meat: 0
